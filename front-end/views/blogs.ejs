@@ -1,0 +1,11 @@
+<div>
+	<% for(let i = 0; i < renderedPosts.length; i++) { %>
+    	<h2><%- renderedPosts[i][0] %></h2>
+    	<%- renderedPosts[i][1] %>
+	<% } %>
+</div>
+<div>
+	<% if (hasNext) { %>
+		<a id="next" href='<%= 'cs144?start='+nextid.toString() %>'>Next</a>
+	<% } %>
+</div>

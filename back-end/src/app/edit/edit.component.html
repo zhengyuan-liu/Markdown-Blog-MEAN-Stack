@@ -1,0 +1,16 @@
+<div *ngIf="post">
+    <div>
+        <label>Title:
+            <input [(ngModel)]="post.title" (ngModelChange)="enableSave()"/>
+        </label>
+    </div>
+    <div>
+        <label>Body:
+            <textarea [(ngModel)]="post.body" (ngModelChange)="enableSave()"></textarea>
+        </label>
+    </div>
+    <p>Last Modified: {{post.modified | date:'medium'}}</p>
+    <button (click)="deletePost()" routerLink="">Delete</button>
+    <button id="save" (click)="savePost()" disabled>Save</button>
+    <button routerLink="/preview/{{post.postid}}">Preview</button>
+</div>

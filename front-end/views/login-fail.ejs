@@ -1,0 +1,16 @@
+<h1>Login Failed: Wrong Username or Password</h1>
+<h2>Please try again.</h2>
+<form method="GET">
+	<div>
+		<label for="username">Username: </label>
+		<input type="text" id="username" name="username" value="<%= username %>">
+	</div>
+	<div>
+		<label for="password">Password: </label>
+		<input type="password" id="password" name="password">
+	</div>
+	<div>
+		<button type="submit" value="submit">Sumbit</button>
+	</div>
+	<input type="hidden" name="redirect" value="<%= redirect %>">
+</form>
