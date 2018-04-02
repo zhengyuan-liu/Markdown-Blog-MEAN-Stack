@@ -1,11 +1,36 @@
 # Markdown-Blog-MEAN-Stack
-Markdown Blogging Web Applications Based on MEAN Stack
+A Markdown Blogging Web Application Based on MEAN Stack. The front-end markdown blog editor and previewer is developed by Angular CLI. The back-end blog server that implement the RESTful API to save and publish blog posts is developed by Node.js, Express and MongoDB; JSON Web Token (JWT) was used to authenticate users.
 
-Front-end: Angular CLI
 
-Back-end: Node.js, Express, MongDB
+## Front-end
+Developed by Angular CLI
+
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">URL</th>
+<th style="text-align: left;">state</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>/</code></td>
+<td style="text-align: left;">This default path shows only the list pane, without showing the edit or preview view</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>/edit/:id</code></td>
+<td style="text-align: left;">This path shows the list pane and the &quot;edit view&quot; for the post with <code>postid=id</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>/preview/:id</code></td>
+<td style="text-align: left;">This path shows the list pane and the &quot;preview view&quot; of the post with <code>postid=id</code></td>
+</tr>
+</tbody>
+</table>
 
 ## Back-end
+Developed by Node.js, Express and MongDB
+
 <table>
 <thead>
 <tr>
